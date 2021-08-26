@@ -23,7 +23,7 @@ namespace CqrsMultipleResorce.Application.Report.Handlers
 
         public Task<IEnumerable<ProductInExist>> Handle(GetProductInExistQuery query, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return _productInExistContext.GetProductInExists();
         }
     }
 }
